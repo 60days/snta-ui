@@ -1,0 +1,117 @@
+{
+"skeleton": {
+	"hash": "QiiQLc9Y9RE",
+	"spine": "4.1.02",
+	"x": -245,
+	"y": -352.07,
+	"width": 0.08,
+	"height": 0.07,
+	"images": "../../Artwork/03_assets/ui_logoIntro/",
+	"audio": "/Users/davidway/Yum Yum Dropbox/Dave Way/Spark Xmas/Spark_Xmas/3_animation/../../../SNTA_2022/Artwork/02_setup"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "cta_tapScreen", "parent": "root" },
+	{
+		"name": "Mask_cta_1",
+		"parent": "cta_tapScreen",
+		"length": 133.11,
+		"rotation": 0.33,
+		"x": -249.55,
+		"y": -253.15,
+		"color": "ffc600ff"
+	},
+	{
+		"name": "Mask_cta_2",
+		"parent": "cta_tapScreen",
+		"length": 133.11,
+		"rotation": 0.33,
+		"x": -249.55,
+		"y": -253.15,
+		"color": "ffc600ff"
+	}
+],
+"slots": [
+	{ "name": "Mask_cta_2", "bone": "Mask_cta_2", "attachment": "Mask_cta_2" },
+	{ "name": "cta_tapToBegin - MAG", "bone": "cta_tapScreen", "color": "ff00f2ff", "attachment": "cta_tapToBegin" },
+	{ "name": "Mask_cta_1", "bone": "Mask_cta_1", "attachment": "Mask_cta_1" },
+	{ "name": "cta_tapToBegin", "bone": "cta_tapScreen", "attachment": "cta_tapToBegin" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"cta_tapToBegin": {
+				"cta_tapToBegin": { "x": -1.5, "y": -368, "width": 487, "height": 32 }
+			},
+			"cta_tapToBegin - MAG": {
+				"cta_tapToBegin": { "x": -1.5, "y": -368, "width": 487, "height": 32 }
+			},
+			"Mask_cta_1": {
+				"Mask_cta_1": {
+					"type": "clipping",
+					"end": "cta_tapToBegin",
+					"vertexCount": 4,
+					"vertices": [ -243.07, -325.83, 195.52, 76.96, -1750.39, 79.69, -1763.61, -328.71 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"Mask_cta_2": {
+				"Mask_cta_2": {
+					"type": "clipping",
+					"end": "cta_tapToBegin - MAG",
+					"vertexCount": 4,
+					"vertices": [ -243.07, -325.83, 195.52, 76.96, -1814.61, 79.69, -1827.83, -328.71 ],
+					"color": "ce3a3aff"
+				}
+			}
+		}
+	}
+],
+"animations": {
+	"intro": {
+		"bones": {
+			"Mask_cta_1": {
+				"translate": [
+					{
+						"time": 4,
+						"curve": [ 4.333, 0, 4.667, 543.76, 4.333, 0, 4.667, 8.66 ]
+					},
+					{ "time": 5, "x": 543.76, "y": 8.66, "curve": "stepped" },
+					{ "time": 6.6667, "x": 543.76, "y": 8.66 }
+				]
+			},
+			"Mask_cta_2": {
+				"translate": [
+					{
+						"time": 3.6667,
+						"curve": [ 4, 0, 4.333, 543.76, 4, 0, 4.333, 8.66 ]
+					},
+					{ "time": 4.6667, "x": 543.76, "y": 8.66 }
+				]
+			}
+		}
+	},
+	"loop": {
+		"slots": {
+			"cta_tapToBegin - MAG": {
+				"attachment": [
+					{}
+				]
+			}
+		},
+		"bones": {
+			"Mask_cta_1": {
+				"translate": [
+					{ "x": 1506.33, "y": 8.66 }
+				]
+			},
+			"Mask_cta_2": {
+				"translate": [
+					{ "x": 1506.33, "y": 8.66 }
+				]
+			}
+		}
+	}
+}
+}

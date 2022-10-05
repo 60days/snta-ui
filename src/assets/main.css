@@ -1,0 +1,238 @@
+@import "./base.css";
+
+@font-face {
+  font-family: 'avenirblack';
+  src: url('fonts/avenir-black-webfont.woff2') format('woff2'),
+       url('fonts/avenir-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'avenirmedium';
+  src: url('fonts/avenir-medium-webfont.woff2') format('woff2'),
+       url('fonts/avenir-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html,body{
+  font-family: avenirmedium;
+  font-size: 16px;
+  color: #fff;
+  background-image:url('snta_bg.jpg');
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.flex-image{
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+h1{
+  /* Tablet/Heading/1 */
+  font-family: 'avenirblack';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  margin-left: 20px;
+margin-right:20px;
+}
+
+h2{
+/* Tablet/Heading/2 */
+font-family: 'avenirblack';
+font-style: normal;
+font-weight: 900;
+font-size: 28px;
+line-height: 120%;
+/* identical to box height, or 78px */
+text-align: center;
+color: #FFFFFF;
+margin-left: 20px;
+margin-right:20px;
+}
+
+h3{
+  
+/* Tablet/Heading/3 */
+font-family: 'avenirmedium';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 110%;
+/* identical to box height, or 39px */
+
+text-align: center;
+
+color: #FFFFFF;
+margin-left: 20px;
+margin-right:20px;
+}
+
+
+.mobile.h1{
+  /* Mobile/Heading/1 */
+
+font-family: 'avenirblack';
+font-style: normal;
+font-weight: 900;
+font-size: 58px;
+line-height: 130%;
+/* identical to box height, or 169px */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+
+.mobile.h2{
+  /* Mobile/Heading/2 */
+
+/* Mobile/Heading/2 */
+
+font-family: 'avenirblack';
+font-style: normal;
+font-weight: 900;
+font-size: 48px;
+line-height: 120%;
+/* identical to box height, or 120px */
+
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+margin-left: 20px;
+margin-right:20px;
+}
+
+.mobile.h3{
+  /* Mobile/Heading/3 */
+
+font-family: 'avenirblack';
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 120%;
+/* identical to box height, or 96px */
+
+text-align: center;
+
+color: #FFFFFF;
+margin-left: 20px;
+margin-right:20px;
+}
+
+.mobile-link{
+  /* Mobile/Button/Link */
+
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 160%;
+/* identical to box height, or 64px */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.04em;
+text-decoration-line: underline;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+
+.mobile-button-active{
+  /* Mobile/Button/Active */
+
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 25px;
+line-height: 160%;
+/* identical to box height, or 96px */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+/* text */
+
+
+color: #F0F0F0;
+}
+
+p.mobile{
+  /* Mobile/Paragraph/Body */
+margin-top: 22px;
+font-family: 'avenirmedium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 70px */
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: -0.02em;
+margin-left: 20px;
+margin-right:20px;
+color: #FFFFFF;
+
+}
+
+.solid-purple-button{
+display:flex;
+height: 62px;
+width: 100%;
+margin-left: 20px;
+margin-right: 20px;
+/* Gradient/Purple */
+font-family: 'avenirmedium';
+background: linear-gradient(115.36deg, #2E0077 16.44%, #4A1097 119.39%, #772BCB 138.61%);
+/* White */
+
+border: 2px solid #FFFFFF;
+border-radius: 4px;
+text-decoration: none;
+color: #fff;
+justify-content: center;
+align-items: center;
+flex-grow: 1;
+width: calc(100% - 40px);
+font-size: 24px;
+}
+
+.spine-player {
+  background-color: transparent !important;
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+  }
+
+
+}

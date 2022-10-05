@@ -1,0 +1,15 @@
+snta_ui_radioBtn.png
+size:331,199
+filter:Linear,Linear
+pma:true
+base
+bounds:199,13,74,74
+border
+bounds:199,89,109,108
+offsets:4,5,118,118
+glow
+bounds:2,2,195,195
+offsets:14,14,223,223
+selected
+bounds:275,32,54,55
+offsets:0,1,55,56

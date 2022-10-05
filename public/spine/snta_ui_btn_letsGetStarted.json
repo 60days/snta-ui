@@ -1,0 +1,271 @@
+{
+"skeleton": {
+	"hash": "sLNIf26Yvxs",
+	"spine": "4.1.02",
+	"x": 1.42,
+	"y": -123.65,
+	"width": 562,
+	"height": 124,
+	"images": "../../Artwork/03_assets/ui_button/",
+	"audio": "/Users/davidway/Yum Yum Dropbox/Dave Way/SNTA_2022/Animation/Spine/./../../../Spark Xmas/Spark_Xmas/3_animation"
+},
+"bones": [
+	{ "name": "root" },
+	{ "name": "main", "parent": "root" },
+	{ "name": "buttonMain", "parent": "main", "x": 295.99, "y": -63.38 },
+	{ "name": "btn_over_line", "parent": "buttonMain", "x": -26.52, "y": 118.29, "color": "ec00ffff" },
+	{ "name": "btn_over_main", "parent": "buttonMain", "x": -26.52, "y": 118.29, "color": "ec00ffff" },
+	{ "name": "btn_up_line", "parent": "buttonMain", "x": -26.52, "y": 118.29, "color": "00ccffff" },
+	{ "name": "btn_up_main", "parent": "buttonMain", "x": -26.52, "y": 118.29, "color": "00ccffff" },
+	{ "name": "lineMask", "parent": "buttonMain", "x": -293.45, "y": -89.44, "color": "9100ffff" },
+	{
+		"name": "text",
+		"parent": "buttonMain",
+		"length": 168.87,
+		"rotation": 0.16,
+		"x": -248.96,
+		"y": 0.53,
+		"color": "ffbc00ff"
+	},
+	{
+		"name": "arrow",
+		"parent": "buttonMain",
+		"length": 168.87,
+		"rotation": 0.16,
+		"x": 206.53,
+		"y": 1.82,
+		"color": "ffbc00ff"
+	}
+],
+"slots": [
+	{ "name": "btn_up_main", "bone": "btn_up_main", "attachment": "base" },
+	{ "name": "btn_over_main", "bone": "btn_over_main", "attachment": "base" },
+	{ "name": "btn_up_line", "bone": "btn_up_line", "attachment": "frame_up" },
+	{ "name": "lineMask", "bone": "lineMask", "attachment": "lineMask" },
+	{ "name": "btn_over_line", "bone": "btn_over_line", "attachment": "frame_over" },
+	{ "name": "arrowMask", "bone": "buttonMain", "attachment": "arrowMask" },
+	{ "name": "gfx_arrow", "bone": "arrow", "attachment": "gfx_arrow" },
+	{ "name": "txt_letsGetStarted", "bone": "text", "attachment": "txt_letsGetStarted" }
+],
+"skins": [
+	{
+		"name": "default",
+		"attachments": {
+			"arrowMask": {
+				"arrowMask": {
+					"type": "clipping",
+					"end": "gfx_arrow",
+					"vertexCount": 4,
+					"vertices": [ 153.65, 63.51, 154.16, -60.92, 263.74, -60.92, 264.25, 64.53 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"btn_over_line": {
+				"frame_over": { "x": 12.95, "y": -116.56, "width": 562, "height": 124 }
+			},
+			"btn_over_main": {
+				"base": { "x": 12.52, "y": -116.73, "width": 553, "height": 116 }
+			},
+			"btn_up_line": {
+				"frame_up": { "x": 12.21, "y": -116.82, "width": 557, "height": 120 }
+			},
+			"btn_up_main": {
+				"base": { "x": 12.2, "y": -116.22, "width": 553, "height": 116 }
+			},
+			"gfx_arrow": {
+				"gfx_arrow": { "x": 3.4, "y": -0.09, "rotation": -0.16, "width": 18, "height": 30 }
+			},
+			"lineMask": {
+				"lineMask": {
+					"type": "clipping",
+					"end": "btn_over_line",
+					"vertexCount": 4,
+					"vertices": [ -8.14, 158.04, 566.94, 156.86, 568.71, -7.11, -8.14, -5.93 ],
+					"color": "ce3a3aff"
+				}
+			},
+			"txt_letsGetStarted": {
+				"txt_letsGetStarted": { "x": 126.13, "y": -1.21, "rotation": -0.16, "width": 256, "height": 36 }
+			}
+		}
+	}
+],
+"events": {
+	"btnExplode": {}
+},
+"animations": {
+	"btn_exit": {
+		"slots": {
+			"btn_over_main": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"btn_up_line": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"btn_up_main": {
+				"rgba": [
+					{ "color": "ffffff7f" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"gfx_arrow": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			},
+			"txt_letsGetStarted": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 0.5, "color": "ffffff00" }
+				]
+			}
+		},
+		"attachments": {
+			"default": {
+				"lineMask": {
+					"lineMask": {
+						"deform": [
+							{
+								"vertices": [ 573.58905, 0, -6.0E-5, 0, -6.0E-5, 0, 573.58905 ]
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"btn_leave": {
+		"slots": {
+			"btn_over_main": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff00" }
+				]
+			},
+			"btn_up_main": {
+				"rgba": [
+					{ "color": "ffffffff" },
+					{ "time": 1, "color": "ffffff7f" }
+				]
+			}
+		},
+		"attachments": {
+			"default": {
+				"lineMask": {
+					"lineMask": {
+						"deform": [
+							{
+								"vertices": [ -75.33295, 0, 171.22992, 0, -7.74475, 0, -75.33295 ]
+							},
+							{
+								"time": 1,
+								"vertices": [ 731.2302, 0, 592.42285, 0, -7.74475, 0, 564.0554 ]
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"btn_over": {
+		"slots": {
+			"btn_over_main": {
+				"rgba": [
+					{
+						"color": "ffffff00",
+						"curve": [ 0.333, 1, 0.667, 1, 0.333, 1, 0.667, 1, 0.333, 1, 0.667, 1, 0.292, 0.4, 0.667, 1 ]
+					},
+					{ "time": 1, "color": "ffffffff" }
+				]
+			},
+			"btn_up_main": {
+				"rgba": [
+					{ "color": "ffffff7f" },
+					{ "time": 1, "color": "ffffffff" }
+				]
+			},
+			"gfx_arrow": {
+				"rgba": [
+					{ "time": 0.3667, "color": "ffffff00" },
+					{ "time": 1, "color": "fffffffe" }
+				]
+			}
+		},
+		"bones": {
+			"arrow": {
+				"translate": [
+					{
+						"curve": [ 0.111, 0, 0.244, 18.08, 0.111, 0, 0.222, 0.17 ]
+					},
+					{ "time": 0.3333, "x": 60.35, "y": 0.17, "curve": "stepped" },
+					{
+						"time": 0.3667,
+						"x": -47.03,
+						"y": -0.13,
+						"curve": [ 0.6, 26.82, 0.789, 0, 0.578, -0.13, 0.789, 0 ]
+					},
+					{ "time": 1 }
+				]
+			}
+		},
+		"attachments": {
+			"default": {
+				"lineMask": {
+					"lineMask": {
+						"deform": [
+							{
+								"vertices": [ -75.33295, 0, -565.3491, 0, -734.3426, 0, -279.07428 ],
+								"curve": [ 0.835, 0.01, 0.175, 1 ]
+							},
+							{
+								"time": 1,
+								"vertices": [ -75.33295, 0, 171.22992, 0, -7.74475, 0, -75.33295 ]
+							}
+						]
+					}
+				}
+			}
+		}
+	},
+	"btn_up": {
+		"slots": {
+			"btn_over_main": {
+				"rgba": [
+					{ "color": "ffffff00" }
+				]
+			},
+			"btn_up_main": {
+				"rgba": [
+					{ "color": "ffffff7f" }
+				]
+			}
+		},
+		"bones": {
+			"buttonMain": {
+				"scale": [
+					{ "time": 1 }
+				]
+			}
+		},
+		"attachments": {
+			"default": {
+				"lineMask": {
+					"lineMask": {
+						"deform": [
+							{
+								"vertices": [ 573.58905, 0, -6.0E-5, 0, -6.0E-5, 0, 573.58905 ]
+							}
+						]
+					}
+				}
+			}
+		}
+	}
+}
+}

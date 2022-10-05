@@ -1,0 +1,15 @@
+snta_ui_btn_anim.png
+size:1327,250
+filter:Linear,Linear
+pma:true
+base
+bounds:561,6,553,116
+frame_over
+bounds:2,124,562,124
+frame_up
+bounds:2,2,557,120
+glow
+bounds:1130,53,195,195
+offsets:14,14,223,223
+selected
+bounds:566,124,562,124
