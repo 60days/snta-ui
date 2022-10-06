@@ -49,14 +49,14 @@ export default defineComponent({
 .spark-logo {
     height: 70px;
     width: 165px;
-    background-image: url("img/spark-logo-only.png");
+    background-image: url("/img/spark-logo-only.png");
     margin-top: 20px;
 }
 
 .snta-logo {
     height: 50px;
     width: 165px;
-    background-image: url("img/SNTA.png");
+    background-image: url("/img/SNTA.png");
 
     margin-top: 20px;
     margin-bottom: 40px;

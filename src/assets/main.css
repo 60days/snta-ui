@@ -3,7 +3,7 @@
 @font-face {
   font-family: 'avenirblack';
   src: url('/fonts/avenir-black-webfont.woff2') format('woff2'),
-       url('fonts/avenir-black-webfont.woff') format('woff');
+       url('/fonts/avenir-black-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
