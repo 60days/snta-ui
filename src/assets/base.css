@@ -73,3 +73,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
 }
+
+.scale-enter-active,
+.scale-leave-active {
+  transition: transform 2s ease;
+}
+.scale-enter-from,
+.scale-leave-to {
+  opacity: 0;
+  transform: scale(0.5);
+}

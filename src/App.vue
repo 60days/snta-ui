@@ -4,9 +4,22 @@ import QuestionList from "./components/QuestionList.vue";
 </script>
 
 <template>
-  <header></header>
+  <header>
+    <div class="wrapper">
+      <nav>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/wishlist">Wishlist</RouterLink>
+        <RouterLink to="/welcome">Welcome</RouterLink>
+        <RouterLink to="/relationship">Relationship</RouterLink>
+      </nav>
+    </div>
+  </header>
 
-  <RouterView />
+  <router-view v-slot="{ Component }">
+    <transition name="scale" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <style scoped>
