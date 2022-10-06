@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import QuestionList from "./components/QuestionList.vue";
 </script>
 
 <template>
   <header>
+    <!--
     <div class="wrapper">
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -13,13 +13,17 @@ import QuestionList from "./components/QuestionList.vue";
         <RouterLink to="/relationship">Relationship</RouterLink>
       </nav>
     </div>
+    -->
   </header>
 
+  <!--
   <router-view v-slot="{ Component }">
     <transition name="scale" mode="out-in">
       <component :is="Component" />
     </transition>
   </router-view>
+  -->
+  <RouterView />
 </template>
 
 <style scoped>

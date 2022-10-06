@@ -4,5 +4,4 @@ import QuestionList from "../components/QuestionList.vue";
 
 <template>
     <main>Relationship</main>
-    <QuestionList />
 </template>

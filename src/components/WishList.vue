@@ -16,12 +16,12 @@
 </template>
 
 <script lang="ts">
-import SntaButton from "./SntaButton.vue";
 import { defineComponent } from "vue";
 import type { Product } from "@/data/types";
 import sntaData from "@/data/snta_data.json";
 import WishListProduct from "./WishListProduct.vue";
 import SpineButton from "./SpineButton.vue";
+import SntaButton from "./SntaButton.vue";
 
 export default defineComponent({
     name: "WishList",

@@ -1,6 +1,6 @@
 <template>
   <div class="snta-list">
-    <SntaButton v-for="button in buttons" :key="button.id" :v-bind="button"></SntaButton>
+    <!--<SntaButton v-for="button in buttons" :key="button.id" :v-bind="button"></SntaButton>-->
   </div>
 </template>
 

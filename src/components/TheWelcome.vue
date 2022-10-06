@@ -5,7 +5,7 @@ import { defineComponent } from "vue";
 defineComponent({
   name: "TheWelcome",
   components: { QuestionPage },
-  created() {},
+  created() { },
   data() {
     return {
       buttons: {
@@ -21,10 +21,5 @@ defineComponent({
 </script>
 
 <template>
-  <QuestionPage
-    title="TEST"
-    subtitle="subtitle"
-    footer="footer"
-    :v-bind="buttons"
-  ></QuestionPage>
+  <div></div>
 </template>

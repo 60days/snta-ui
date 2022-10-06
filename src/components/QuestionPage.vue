@@ -7,7 +7,7 @@ import QuestionList from "./QuestionList.vue";
 export default defineComponent({
   name: "QuestionPage",
   components: { QuestionList },
-  created() {},
+  created() { },
   data() {
     return {};
   },
@@ -44,7 +44,7 @@ export default defineComponent({
       </h2>
     </div>
     <div class="snta-question-page__body">
-      <QuestionList :v-bind="buttons" />
+      <!--<QuestionList :v-bind="buttons" />-->
     </div>
     <div class="snta-question-page__footer">
       {{ footer }}
@@ -52,4 +52,6 @@ export default defineComponent({
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>
