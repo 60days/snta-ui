@@ -17,25 +17,25 @@ export default defineComponent({
 
         // this.id = uuidv4();
         /*
-                                                                                        setTimeout(() => {
-                                                                                            var player = new spine.SpinePlayer(this.id, {
-                                                                                                jsonUrl: "spine/snta_ui_btn_anim.json",
-                                                                                                atlasUrl: "spine/snta_ui_btn_anim.atlas",
-                                                                                                animation: "btn_select",
-                                                                                                premultipliedAlpha: false,
-                                                                                                backgroundColor: "#00000000",
-                                                                                
-                                                                                                viewport: {
-                                                                                                    debugRender: true,
-                                                                                                },
-                                                                                                showControls: false,
-                                                                                                preserveDrawingBuffer: false,
-                                                                                                showLoading: false,
-                                                                                            });
-                                                                                            console.log(player);
-                                                                                            player.play();
-                                                                                        }, 1);
-                                                                                        */
+                                                                                                setTimeout(() => {
+                                                                                                    var player = new spine.SpinePlayer(this.id, {
+                                                                                                        jsonUrl: "spine/snta_ui_btn_anim.json",
+                                                                                                        atlasUrl: "spine/snta_ui_btn_anim.atlas",
+                                                                                                        animation: "btn_select",
+                                                                                                        premultipliedAlpha: false,
+                                                                                                        backgroundColor: "#00000000",
+                                                                                        
+                                                                                                        viewport: {
+                                                                                                            debugRender: true,
+                                                                                                        },
+                                                                                                        showControls: false,
+                                                                                                        preserveDrawingBuffer: false,
+                                                                                                        showLoading: false,
+                                                                                                    });
+                                                                                                    console.log(player);
+                                                                                                    player.play();
+                                                                                                }, 1);
+                                                                                                */
     },
     data() {
         return {
@@ -64,6 +64,18 @@ export default defineComponent({
     border: 2px solid #ffffff;
     border-radius: 4px;
     height: 65px;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed */
 }
 
 .button-text {

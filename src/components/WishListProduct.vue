@@ -1,7 +1,8 @@
 <template>
     <div class="wishlist-product">
         <div class="product-image flex-image" v-bind:style="{
-          backgroundImage: 'url(/img/product_images/' + product.image + ')',
+            backgroundImage:
+                'url(' + baseUrl + 'img/product_images/' + product.image + ')',
         }"></div>
         <h2 class="product-title">{{ product.name }}</h2>
         <p class="product-description">{{ product.description }}</p>
@@ -20,7 +21,9 @@ export default defineComponent({
     name: "WishListProduct",
     components: {},
     created() { },
-    data() { },
+    data() {
+        return { baseUrl: import.meta.env.BASE_URL };
+    },
     props: {
         product: {
             type: Object,
