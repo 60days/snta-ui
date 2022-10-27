@@ -74,7 +74,7 @@ export default defineComponent({
                     )
                 )
                     check = true;
-            })(navigator.userAgent || navigator.vendor || window.opera);
+            })(navigator.userAgent || navigator.vendor);
             console.log(check);
             return check;
         },
@@ -85,7 +85,7 @@ export default defineComponent({
             };
             try {
                 await navigator.share(shareData);
-            } catch (err) {
+            } catch (err: any) {
                 console.error("Share failed:", err.message);
             }
         },
