@@ -41,6 +41,13 @@ export default defineComponent({
                     product.cat!.includes(wishlistType) || product.cat === "giftcard"
                 );
             });
+            //order products by array of ids in productOrder.{type}
+            this.products = this.products.sort((a, b) => {
+                return (
+                    (sntaData.productOrder as any)[wishlistType].indexOf(a.id) -
+                    (sntaData.productOrder as any)[wishlistType].indexOf(b.id)
+                );
+            });
             // sentences is type {string: string}
             const sentences = {
                 musiclover: "You've got a Music Lover who's now easy to shop for",
