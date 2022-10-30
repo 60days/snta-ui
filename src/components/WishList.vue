@@ -34,13 +34,14 @@ export default defineComponent({
         //remove all spaces from wishlist type
 
         if (typeParam !== null) {
-            const wishlistType = typeParam.replace(/\s/g, "").toLocaleLowerCase();
+            let wishlistType = typeParam.replace(/\s/g, "").toLocaleLowerCase();
             //get products for wishlist type
             this.products = sntaData.products.filter((product) => {
                 return (
                     product.cat!.includes(wishlistType) || product.cat === "giftcard"
                 );
             });
+            wishlistType = this.products[0].cat; //force to valid categ
             //order products by array of ids in productOrder.{type}
             this.products = this.products.sort((a, b) => {
                 return (
@@ -50,10 +51,11 @@ export default defineComponent({
             });
             // sentences is type {string: string}
             const sentences = {
-                musiclover: "You've got a Music Lover who's now easy to shop for",
+                musiclover: "You've got a Music Lover who's now easy to shop for.",
                 gamer: "You've got a Gamer who's now easy to shop for.",
                 moviebuff: "You've got a Movie Buff who's now easy to shop for.",
                 entertainer: "You've got an Entertainer who's now easy to shop for.",
+                adventurer: "You've got an Adventurer who's now easy to shop for.",
             };
 
             this.wishlistTitle = (sentences as any)[wishlistType];
@@ -61,10 +63,9 @@ export default defineComponent({
     },
     data() {
         return {
-            type: "music",
+            type: "",
             products: sntaData.products,
-            wishlistTitle:
-                "Based off your answers, you're shopping for a Music Lover",
+            wishlistTitle: "",
         };
     },
     computed: {},

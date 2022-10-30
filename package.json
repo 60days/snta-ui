@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check build-only",
+    "build": "vite build --base=/wishlist/",
     "build-wishlist":  "vite build --base=/wishlist/",
     "preview": "vite preview --port 4173",
     "build-only": "vite build",

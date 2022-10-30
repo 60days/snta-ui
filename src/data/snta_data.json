@@ -79,7 +79,7 @@
     {
       "id": "02",
       "name": "TV Movie",
-      "sentence": "movie buff",
+      "sentence": "moviebuff",
       "answer1": "Watch the greatest movies of all time or write & direct their own.",
       "answer2": "Midday cinema sessions and late night movie marathons.",
       "answer3": "Starting a new T.V. show"
@@ -471,7 +471,7 @@
       "id": 9,
       "name": "Apple TV 4K 32 GB (Gen 2) ",
       "url": "https://www.spark.co.nz/shop/mobile/accessories/apple-tv-4k-32gb-gen-2---black/",
-      "cat": "movie buff",
+      "cat": "moviebuff",
       "image": "09_apple-tv4k.png",
       "description": "4K High Frame Rate HDR, with Dolby Atmos sound capabilities, Apple TV 4K (2nd generation) delivers a truly cinematic experience to your screen — whether you’re watching sport or a movie. "
     },
@@ -479,7 +479,7 @@
       "id": 10,
       "name": "Harman Kardon Citation Sub S ",
       "url": "https://www.spark.co.nz/shop/mobile/accessories/harman-kardon-citation-sub-s/",
-      "cat": "movie buff",
+      "cat": "moviebuff",
       "image": "10_hk-citationsubs.png",
       "description": "Rich, deep bass in a sleek, compact package. The Harman Kardon Citation Sub S subwoofer delivers best-in-class bass sound for all your favorite movies and music."
     },
@@ -487,7 +487,7 @@
       "id": 11,
       "name": "JBL Bar 5.0",
       "url": "https://www.spark.co.nz/shop/mobile/accessories/jbl-bar-5_0-multibeam/",
-      "cat": "movie buff",
+      "cat": "moviebuff",
       "image": "11_jblbar5.png",
       "description": "Make your viewing or gaming experience more immersive with JBL Multibeam™ technology and Virtual Dolby Atmos®. Bluetooth lets you enjoy music from your smartphone or tablet too."
     },
@@ -495,7 +495,7 @@
       "id": 12,
       "name": "Harman Kardon Citation Multibeam 700",
       "url": "https://www.spark.co.nz/shop/mobile/accessories/harman-kardon-citation-multibeam-700/",
-      "cat": "movie buff",
+      "cat": "moviebuff",
       "image": "12_hk-citationmulti.png",
       "description": "Elegant, dynamic and powerful. The Harman Kardon Citation MultiBeam™ 700 delivers full virtual surround sound to your TV without the need for extra speakers and wires."
     },
@@ -503,7 +503,7 @@
       "id": 13,
       "name": "LG S90QY Soundbar",
       "url": "https://www.spark.co.nz/shop/mobile/accessories/lg-s90qy-5_1_3-channel-soundbar---black/",
-      "cat": "movie buff",
+      "cat": "moviebuff",
       "image": "13_lgs90qy-soundbar.png",
       "description": "Immerse yourself in a phenomenal sound experience with 5.1.3 channels, including the world’s first sound bar with up-firing center channel that lets you hear every note clearly."
     },
@@ -511,7 +511,7 @@
       "id": 14,
       "name": "LG C2 OLED 48 TV",
       "url": "https://www.spark.co.nz/shop/mobile/accessories/lg-48-inch-c2-oled-tv---black/",
-      "cat": "movie buff",
+      "cat": "moviebuff",
       "image": "14_lgc2-oledtv.png",
       "description": "The LG C2 OLED TV packs brighter colours, an advanced processor and a sleeker, slimmer bezel that won’t go unnoticed."
     },
