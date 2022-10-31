@@ -358,7 +358,8 @@
 7,
 5,
 8],
-"moviebuff":[13,
+"moviebuff":[
+  13,
 11,
 9,
 12,
@@ -592,7 +593,7 @@
     },
     {
       "id": 24,
-      "name": "Livall Cycling Helmet Phone",
+      "name": "Livall Urban Helmet Phone",
       "url": "https://www.spark.co.nz/shop/mobile/accessories/livall-urban-helmet-phone-bh51m-neo-large---black/",
       "cat": "adventurer",
       "image": "24_livall-helmet-phone.png",
