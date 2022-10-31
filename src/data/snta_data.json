@@ -364,9 +364,12 @@
 12,
 10],
 
-"gamer":[16,
+
+
+"gamer":[
+  20,
 21,
-20,
+16,
 17,
 19,
 18,
@@ -557,7 +560,7 @@
     },
     {
       "id": 20,
-      "name": "Blue Yeti – Blackout",
+      "name": "Blue Yeti - Blackout",
       "url": "https://www.spark.co.nz/shop/mobile/accessories/blue-microphones-blue-yeti---blackout/",
       "cat": "gamer",
       "image": "20_blue-yeti.png",

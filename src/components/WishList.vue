@@ -43,15 +43,21 @@ export default defineComponent({
             });
             wishlistType = this.products[0].cat; //force to valid categ
             //order products by array of ids in productOrder.{type}
+            this.products = this.products.filter((product) => {
+                return (sntaData.productOrder as any)[wishlistType].includes(
+                    product.id
+                );
+            });
             this.products = this.products.sort((a, b) => {
                 return (
                     (sntaData.productOrder as any)[wishlistType].indexOf(a.id) -
                     (sntaData.productOrder as any)[wishlistType].indexOf(b.id)
                 );
             });
+            console.log(wishlistType);
             // sentences is type {string: string}
             const sentences = {
-                musiclover: "You've got a Music Lover who's now easy to shop for.",
+                musiclovers: "You've got a Music Lover who's now easy to shop for.",
                 gamer: "You've got a Gamer who's now easy to shop for.",
                 moviebuff: "You've got a Movie Buff who's now easy to shop for.",
                 entertainer: "You've got an Entertainer who's now easy to shop for.",
